@@ -9,8 +9,10 @@ function ProjectGallery() {
       <div className="container-fluid">
         <div className="row">
           {projectData.map((project) => <Project 
+                                          key={project.id}
                                           title={project.title}
-                                          description={project.description}/>)}
+                                          description={project.description}
+                                          image={project.image}/>)}
         </div>
       </div>
     </div>

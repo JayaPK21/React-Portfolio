@@ -3,7 +3,7 @@
         "id": 1,
         "title": "Project 1",
         "description": "Description for Project 1",
-        "image": "",
+        "image": "project1Img",
         "deployedURL": "",
         "gitHubURL": ""
     },
@@ -12,7 +12,7 @@
         "id": 2,
         "title": "Project 2",
         "description": "Description for Project 2",
-        "image": "",
+        "image": "project2Img",
         "deployedURL": "",
         "gitHubURL": ""
     },
@@ -21,7 +21,7 @@
         "id": 3,
         "title": "Project 3",
         "description": "Description for Project 3",
-        "image": "",
+        "image": "project3Img",
         "deployedURL": "",
         "gitHubURL": ""
     },
@@ -30,7 +30,25 @@
         "id": 4,
         "title": "Project 4",
         "description": "Description for Project 4",
-        "image": "",
+        "image": "project4Img",
+        "deployedURL": "",
+        "gitHubURL": ""
+    },
+
+    {
+        "id": 5,
+        "title": "Project 5",
+        "description": "Description for Project 5",
+        "image": "project5Img",
+        "deployedURL": "",
+        "gitHubURL": ""
+    },
+
+    {
+        "id": 6,
+        "title": "Project 6",
+        "description": "Description for Project 6",
+        "image": "project6Img",
         "deployedURL": "",
         "gitHubURL": ""
     }
