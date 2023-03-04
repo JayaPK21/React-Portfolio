@@ -32,12 +32,19 @@ function Project({title, description, image}) {
         
         default: break;
     }
-    
+    console.log("project image: "+projectImage);
+    const imgStyle = {
+        backgroundImage: 'url('+projectImage+')',
+        minHeight: 250,
+        backgroundSize: 'cover',
+        backgroundRepeat: 'no-repeat',
+        backgroundPosition: 'center'
+    }
     return(
         <div className='col-sm-6 col-lg-4'>
             <div className='card my-2'>
-                <img src={projectImage} className="card-img-top" alt="..." />
-                <div className="card-body">
+                {/* <img src={projectImage} className="card-img-top" alt="..." /> */}
+                <div style={imgStyle} className="card-body">
                     <h5 className="card-title">{title}</h5>
                     <p className="card-text">{description}</p>
                 </div>
