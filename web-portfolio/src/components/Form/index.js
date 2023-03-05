@@ -22,6 +22,17 @@ class Form extends Component {
   handleFormSubmit = event => {
     event.preventDefault();
 
+    if(this.state.userName === ""){
+      alert("Please enter your name");
+      return;
+    } else if(this.state.email === "") {
+      alert("Please enter your Email Address");
+      return;
+    } else if(this.state.message === "") {
+      alert("Please enter a message");
+      return;
+    }
+    
     // Alert the user for submitting the form successfully.
     alert(`Thank you ${this.state.userName} for your enquiry, I will get in touch with you soon on ${this.state.email}`);
     this.setState({
@@ -44,14 +55,14 @@ class Form extends Component {
             name="userName"
             onChange={this.handleInputChange}
             type="text"
-            placeholder="Name"
+            placeholder="Enter your Name"
           />
           <input
             value={this.state.email}
             name="email"
             onChange={this.handleInputChange}
             type="email"
-            placeholder="Email id"
+            placeholder="Enter your Email Address"
           />
           <textarea
             value={this.state.message}
