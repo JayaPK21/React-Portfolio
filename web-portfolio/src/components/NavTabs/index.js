@@ -1,8 +1,10 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
+import './style.css';
 
 function NavTabs() {
   return (
+    <div>
     <ul className="nav nav-tabs">
       <li className="nav-item">
         <NavLink
@@ -47,6 +49,7 @@ function NavTabs() {
         </NavLink>
       </li>
     </ul>
+    </div>
   );
 }
 
