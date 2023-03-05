@@ -1,0 +1,18 @@
+.form {
+  width: 500px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.form > * {
+  padding: 7px 10px;
+  margin: 5px;
+  border: 1px solid #ccc;
+  outline: none;
+}
+
+.form button {
+  background-color: blue;
+  color: white;
+}
