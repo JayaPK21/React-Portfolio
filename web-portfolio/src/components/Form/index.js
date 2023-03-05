@@ -46,10 +46,12 @@ class Form extends Component {
     // Notice how each input has a `value`, `name`, and `onChange` prop
     return (
       <div>
-        <p>
+        {/* <p>
           Hello {this.state.userName} {this.state.email}
-        </p>
+        </p> */}
+        
         <form className="form">
+          <h4 style={{backgroundColor: 'lightblue'}}>Contact Me</h4>
           <input
             value={this.state.userName}
             name="userName"
