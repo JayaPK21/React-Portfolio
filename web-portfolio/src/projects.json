@@ -1,6 +1,6 @@
 [
     {
-        "id": 1,
+        "id": "proj1",
         "title": "Project 1",
         "description": "Description for Project 1",
         "image": "project1Img",
@@ -9,7 +9,7 @@
     },
 
     {
-        "id": 2,
+        "id": "proj2",
         "title": "Project 2",
         "description": "Description for Project 2",
         "image": "project2Img",
@@ -18,7 +18,7 @@
     },
 
     {
-        "id": 3,
+        "id": "proj3",
         "title": "Project 3",
         "description": "Description for Project 3",
         "image": "project3Img",
@@ -27,7 +27,7 @@
     },
 
     {
-        "id": 4,
+        "id": "proj4",
         "title": "Project 4",
         "description": "Description for Project 4",
         "image": "project4Img",
@@ -36,7 +36,7 @@
     },
 
     {
-        "id": 5,
+        "id": "proj5",
         "title": "Project 5",
         "description": "Description for Project 5",
         "image": "project5Img",
@@ -45,7 +45,7 @@
     },
 
     {
-        "id": 6,
+        "id": "proj6",
         "title": "Project 6",
         "description": "Description for Project 6",
         "image": "project6Img",

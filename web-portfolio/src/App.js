@@ -19,7 +19,7 @@ function App() {
           <Route path="about" element={<About />} />
           <Route path="projectgallery" element={<ProjectGallery />} />
           {/* Define a route that will have descendant routes */}
-          <Route path="contact/*" element={<Contact />} />
+          <Route path="contact" element={<Contact />} />
         </Routes>
       </div>
     </Router>

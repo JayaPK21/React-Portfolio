@@ -7,8 +7,8 @@ import project5Img from '../../assets/images/weather-dashboard-website.png';
 import project6Img from '../../assets/images/css-snippet-project.png';
 
 
-function Project({title, description, image}) {
-    console.log("Image source: "+image);
+function Project({id, title, description, image, display, displayHandler}) {
+    
     let projectImage = null;
 
     switch(image){
@@ -32,7 +32,7 @@ function Project({title, description, image}) {
         
         default: break;
     }
-    console.log("project image: "+projectImage);
+    // console.log("project image: "+projectImage);
     const imgStyle = {
         backgroundImage: 'url('+projectImage+')',
         minHeight: 250,
@@ -40,17 +40,35 @@ function Project({title, description, image}) {
         backgroundRepeat: 'no-repeat',
         backgroundPosition: 'center'
     }
-    return(
-        <div className='col-sm-6 col-lg-4'>
-            <div className='card my-2'>
-                {/* <img src={projectImage} className="card-img-top" alt="..." /> */}
-                <div style={imgStyle} className="card-body">
+
+    if(display === "cover"){
+
+        return(
+            
+            <div id={id} style={imgStyle} className='card my-2'>
+                {/* <div  className="card-body">
                     <h5 className="card-title">{title}</h5>
                     <p className="card-text">{description}</p>
+                </div> */}
+            </div>
+            
+        );
+
+    } else {
+        // console.log("Value of id: "+id);
+        return(
+            
+            <div id={id} style={{minHeight: 250, backgroundColor: 'green'}} className='card my-2'>
+                <div id={id} className="card-body">
+                    <h5 id={id} className="card-title">{title}</h5>
+                    <p id={id} className="card-text">{description}</p>
                 </div>
             </div>
-        </div>
-    );
+            
+        );
+
+    }
+    
 }
 
 export default Project;
